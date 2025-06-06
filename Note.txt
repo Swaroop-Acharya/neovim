@@ -1,0 +1,21 @@
+Copy(Yank)
+Copy line - yy
+Copy N line - Nyy
+Copy word - yw
+Copy to end of line - y$
+
+Paste
+Paster after cursor - p 
+Paster before cursor - P 
+Paster from clip board - "+p 
+
+Delete
+Delete a line - dd 
+Delete N line - Ndd 
+Delete word - dw 
+Delete to end of the line - d$
+
+
+append  - a 
+insert - i
+normal mode - jj 
