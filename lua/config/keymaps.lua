@@ -9,3 +9,9 @@ vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>F", function()
   require("telescope.builtin").find_files({ cwd = require("lazyvim.util").root.get() })
 end, { desc = "Find Files (project root)" })
+
+-- move the teh line using alt + (j,k) in visual and normal mode
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })

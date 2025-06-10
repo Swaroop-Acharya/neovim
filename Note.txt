@@ -49,3 +49,6 @@ gg to go to the top of the file
 {line}gg to go to a specific line
 G to go to the end of the file
 % jump to matching ({[]})
+
+
+  Move line up and down with ALT + (j/k) in normal and visual mode
